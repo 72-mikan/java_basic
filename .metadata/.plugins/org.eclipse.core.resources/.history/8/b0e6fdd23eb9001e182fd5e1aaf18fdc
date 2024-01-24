@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class kadai5 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int h, w;
+		h = scan.nextInt();
+		w = scan.nextInt();
+		
+		scan.close();
+	}
+
+}

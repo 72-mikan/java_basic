@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class kadai4 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int h, w;
+		int[][] data = new int[2][2];
+		
+	}
+
+}

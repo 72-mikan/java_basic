@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Kadai2 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int[] settingNum = new int[2];
+		int i;
+		
+		
+		for(i = 0; i < settingNum.length; i++) {
+			settingNum[i] = scan.nextInt();
+		}
+	}
+
+}

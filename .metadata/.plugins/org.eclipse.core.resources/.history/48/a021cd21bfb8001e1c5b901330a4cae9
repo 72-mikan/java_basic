@@ -1,0 +1,9 @@
+
+public class UserCar {
+
+	public static void main(String[] args) {
+		Car c1;
+		c1 = new Car();
+	}
+
+}

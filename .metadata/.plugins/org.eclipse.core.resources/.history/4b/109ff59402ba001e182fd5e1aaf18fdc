@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class kadai7 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int scanData = scan.nextInt();
+		
+		int digits = Integer.toString(scanData).length();
+		int[] dataList = new int[digits];
+		
+		int tmp = scanData;
+		
+		for(int i=0; i<digits; i++) {
+			dataList[digits-1-i] = tmp % 10;
+			tmp = tmp / 10;
+		}
+		
+//		for(i=0; i<digits; i++) {
+//			System.out.println(dataList[i]);
+//		}
+//		
+//		System.out.println(digits);
+		
+		scan.close();
+	}
+	
+	static void displayBarcode() {
+		
+	}
+
+}

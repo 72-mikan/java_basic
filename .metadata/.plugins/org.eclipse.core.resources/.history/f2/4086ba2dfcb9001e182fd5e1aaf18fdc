@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class kadai7 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int scanData = scan.nextInt();
+		
+		int digits = Integer.toString(scanData).length();
+		
+		System.out.println(digits);
+		
+		scan.close();
+	}
+
+}

@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class kadai5 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int h, w;
+		h = scan.nextInt();
+		w = scan.nextInt();
+		
+		String[][] geoglyph = new String[h][w];
+		
+		int i, j;
+		
+		for(i = 0; i < h; i++) {
+			for(j = 0; j < w; j++) {
+				geoglyph[i][j] = scan.next();
+			}
+		}
+		
+		int count = 0;
+		
+		for(i = 0; i < h - 3; i++) {
+			for(j = 0; j < w - 3; j++) {
+				
+			}
+		}
+		
+		scan.close();
+	}
+	
+	static boolean check(int a, int b, String[][] data) {
+		boolean check = true;
+		int i, j;
+		for(i = a; i < a + 3; i++) {
+			for(j = b; j < b + 3; j++) {
+				if(data[i + 1][j + 1] != ".") {
+					check = false;
+				}
+			}
+		}
+		return check;
+	}
+
+}

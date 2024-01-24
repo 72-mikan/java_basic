@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class kadai6 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int quizNum = scan.nextInt();
+		
+		String[][] quizList = new String[quizNum][2];
+		int i, j;
+		
+		for(i=0; i<quizNum; i++) {
+			for(j=0; j<2; j++) {
+				quizList[i][j] = scan.next();
+			}
+		}
+		
+		boolean[] check = new boolean[quizNum];
+		
+	}
+
+}

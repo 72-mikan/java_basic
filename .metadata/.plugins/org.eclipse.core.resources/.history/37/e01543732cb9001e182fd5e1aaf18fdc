@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class kadai3 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int x, y, countryNum;
+		
+		x = scan.nextInt();
+		y = scan.nextInt();
+		countryNum = scan.nextInt();
+		
+		System.out.println(countryNum);
+		
+		String[] countryList = new String[countryNum];
+		int[][] countryPoint = new int[countryNum][2];
+		int i, j;
+		
+		for(i = 0; i < countryNum; i++) {
+			countryList[i] = scan.next();
+			for(j = 0; j < 2; j++) {
+				countryPoint[i][j] = scan.nextInt();
+				System.out.println(countryPoint[i][j]);
+			}
+		}
+		
+		for(i = 0; i < countryNum; i++) {
+			System.out.println(countryList[i] + " " +countryPoint[i][0] + " " + countryPoint[i][1]);
+		}
+		
+		scan.close();
+	}
+
+}

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class kadai3 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int x, y, country;
+		
+		x = scan.nextInt();
+		y = scan.nextInt();
+		country = scan.nextInt();
+		
+		int[] countryList = new int[country];		
+		scan.close();
+	}
+
+}

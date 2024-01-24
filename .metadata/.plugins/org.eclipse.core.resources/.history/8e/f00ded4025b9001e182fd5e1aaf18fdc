@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Kadai2 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int[] settingNum = new int[2];
+		int[] data = new int[settingNum[0]];
+		int i;
+		int max = 0;
+		
+		
+		for(i = 0; i < settingNum.length; i++) {
+			settingNum[i] = scan.nextInt();
+		}
+		
+		for(i = 0; i < settingNum[0]; i++) {
+			data[i] = scan.nextInt();
+			if(data[i] >= max) {
+				max = data[i];
+			}
+		}
+		
+		
+		
+		
+	}
+
+}
